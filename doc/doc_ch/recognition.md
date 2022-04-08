@@ -15,24 +15,7 @@
 - [4 预测](#预测)
 - [5 转Inference模型测试](#Inference)
 
-
-<a name="数据准备"></a>
-## 1. 数据准备
-
-
-PaddleOCR 支持两种数据格式:
- - `lmdb` 用于训练以lmdb格式存储的数据集(LMDBDataSet);
- - `通用数据` 用于训练以文本文件存储的数据集(SimpleDataSet);
-
-训练数据的默认存储路径是 `PaddleOCR/train_data`,如果您的磁盘上已有数据集，只需创建软链接至数据集目录：
-
-```
-# linux and mac os
-ln -sf <path/to/dataset> <path/to/paddle_ocr>/train_data/dataset
-# windows
-mklink /d <path/to/paddle_ocr>/train_data/dataset <path/to/dataset>
-```
-
+ 
 <a name="准备数据集"></a>
 ### 1.1 自定义数据集
 下面以通用数据集为例， 介绍如何准备数据集：
